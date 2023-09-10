@@ -33,27 +33,23 @@
     // 프로그램 목록
     let program = {};
 
-    let 서진이네 = [
-        {name: "서진이네 - 09화(230421)", url:"http://naver.me/xuCXvjOS"},
-        {name: "서진이네 - 08화(230414)", url:""},
-        {name: "서진이네 - 07화(230407)", url:""},
-        {name: "서진이네 - 01화(230224)", url:""},
+    let 무빙 = [
+        {name: "무빙-01화", url:""},
+        {name: "무빙-02화", url:""},
+        {name: "무빙-03화", url:""},
+        {name: "무빙-04화", url:""},
+        {name: "무빙-05화", url:""},
+        {name: "무빙-06화", url:""},
+        {name: "무빙-07화", url:""},
+        {name: "무빙-08화", url:""},
+        {name: "무빙-09화", url:""},
+        {name: "무빙-10화", url:""},
+        {name: "무빙-11화", url:""},
+        {name: "무빙-12화", url:""},
     ];
         
-    let 닥터차정숙 = [
-        {name: "닥터차정숙 - 03화(230422)", url:"http://naver.me/FoRPj08U"},
-        {name: "닥터차정숙 - 04화(230423)", url:"http://naver.me/FlxVoQgs"},
-        {name: "닥터차정숙 - 05화(230429)", url:"http://naver.me/x3iVZlWO"},
-        {name: "닥터차정숙 - 06화(230430)", url:"http://naver.me/5bdmlixb"},
-        {name: "닥터차정숙 - 07화(230506)", url:"http://naver.me/5wH9xXrJ"},
-        {name: "닥터차정숙 - 09화(230513)", url:"http://naver.me/FhdPd6Qw"},
-        {name: "닥터차정숙 - 10화(230514)", url:"http://naver.me/GYTX3twy"}
-        
-    ];
-
     /* 신규 프로그램일시 추가 */
-    program.닥터차정숙 = 닥터차정숙;
-    program.서진이네 = 서진이네;
+    program.무빙 = 무빙;
     
     let html = "";
     // 화면에 배치
@@ -82,10 +78,13 @@
         html += "<br>";
 
     }
-
-    $(".inner").append(html);
-
-
+    var str = prompt("김가지의 생일을 입력해주세요. ( 예)960704)");
+    if (str == '931210' || str == '19931210') {
+        $(".inner").append(html);    
+    } else {
+        alert("아닌데 ? 틀렸는데? 바보(바다의보배)~");
+    }
+    
     function leeFnc(){
         alert("이가지 이미 본거잖아아아아아앙 가만안도웅~~~");
     }
